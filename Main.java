@@ -29,26 +29,35 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        String exemplo;
-        System.out.println("Digite uma string: ");
-        exemplo = sc.nextLine();
-        System.out.printf("Voce digitou: %s\n", exemplo);
+        String original = "abcd EFGH ijkl MNOPEF";
+        String so1 = original.toLowerCase();
+        String so2 = original.toUpperCase();
+        String so3 = original.trim(); //elimina os espaços no final da string
+        String so4 = original.substring(2); //cria uma nova string do indice 2 pra frente
+        String so5 = original.substring(2,5); //(começo, final)
+        String so6 = original.replace('a','X');
+        String so7 = original.replace("abc", "XXX");
+        int i = original.indexOf("EF");
+        int j = original.lastIndexOf("EF");
+        String s = "batata maça limão";
 
+        String[] vetor = s.split(" ");
+        for(int h = 0; h < 3; h++)
+        {
+            System.out.printf("%s\n", vetor[h]);
+        }
 
-        int numero;
-        System.out.println("Digite um número: ");
-        numero = sc.nextInt();
-        System.out.printf("Você digitou o numero %d\n", numero);
+        System.out.println(original);
+        System.out.println(so1);
+        System.out.println(so2);
+        System.out.println(so3);
+        System.out.println(so4);
+        System.out.println(so5);
+        System.out.println(so6);
+        System.out.println(so7);
+        System.out.println(i);
+        System.out.println(j);
 
-        char letra;
-        System.out.println("Digite uma letra: ");
-        letra = sc.next().charAt(0); //o charAt(0) pega só o primeiro elemento da string
-        System.out.printf("Voce digitou a letra: %c\n", letra);
-
-        double numeroDouble;
-        System.out.println("Digite um float: ");
-        numeroDouble = sc.nextDouble();
-        System.out.printf("Voce digitou o numero: %.2f", numeroDouble);
 
         sc.close();
     }
