@@ -1,7 +1,7 @@
 package application;
 
 import java.util.Scanner;
-
+import entities.Triangle;
 public class Program {
 
     public static void main(String[]args)
@@ -11,23 +11,23 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        double xA, xB, xC, yA, yB,yC;
+       Triangle x, y;
+
+       x = new Triangle();
+       y = new Triangle();
 
         System.out.println("Digite os lados do triângulo X: ");
-        xA = sc.nextDouble();
-        xB = sc.nextDouble();
-        xC = sc.nextDouble();
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
 
         System.out.println("Digite os lados do triângulo Y: ");
-        yA = sc.nextDouble();
-        yB = sc.nextDouble();
-        yC = sc.nextDouble();
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.c = sc.nextDouble();
 
-        double p = (xA+ xB + xC) /2.0;
-        double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
-
-        p = (yA+ yB + yC) /2.0;
-        double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Area do triângulo X: %.2f\n", areaX);
         System.out.printf("Area do triângulo Y: %.2f\n", areaY);
