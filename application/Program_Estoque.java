@@ -19,8 +19,21 @@ public class Program_Estoque {
         System.out.print("Quantity in stock:");
         product.quantity = sc.nextInt();
 
-        System.out.printf("Product Data: %s", product.toString());
+        System.out.printf("Product Data: %s\n", product.toString());
 
+        int quantityAdded;
+        System.out.println("Enter the number of products to be added in stock: ");
+        quantityAdded = sc.nextInt();
+        product.addProducts(quantityAdded);
+
+        System.out.printf("Updated Data: %s\n", product.toString());
+
+        int quantityRemoved;
+        System.out.println("Enter the number of products to be removed in stock: ");
+        quantityRemoved = sc.nextInt();
+        product.removeProducts(quantityRemoved);
+
+        System.out.printf("Updated Data: %s\n", product.toString());
 
         sc.close();
     }
