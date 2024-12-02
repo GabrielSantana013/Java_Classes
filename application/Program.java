@@ -13,8 +13,8 @@ public class Program {
         System.out.println("Enter radius:");
         double radius = sc.nextDouble();
 
-        double c = circumference(radius);
-        double v = volume(radius);
+        double c = Circumference(radius);
+        double v = Volume(radius);
 
         System.out.printf("Circunference: %.2f\n", c);
         System.out.printf("Volume: %.2f\n", v);
