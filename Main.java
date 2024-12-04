@@ -51,5 +51,8 @@ public class Main {
         System.out.printf("Voce digitou o numero: %.2f", numeroDouble);
 
         sc.close();
+
+        System.out.println("Fim do programa");
+
     }
 }
