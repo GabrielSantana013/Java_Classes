@@ -17,6 +17,9 @@ public class Program {
         System.out.print("Quantity in stock: ");
 
         Product product = new Product(name,price);
+        product.setName("Arnaldo");
+        System.out.printf("O nome do produto foi mudado para %s\n", product.getName());
+
         System.out.println("Product data: " + product);
         System.out.println();
 
