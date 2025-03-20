@@ -1,9 +1,9 @@
-package application;
+package Exe01.application;
 
-import model.entities.CarRental;
-import model.entities.Vehicle;
-import model.services.BrazilTaxServices;
-import model.services.RentalService;
+import Exe01.model.entities.CarRental;
+import Exe01.model.entities.Vehicle;
+import Exe01.model.services.BrazilTaxServices;
+import Exe01.model.services.RentalService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
